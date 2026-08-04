@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light.png",
+        url: "/icon.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark.png",
+        url: "/dark-icon.png",
         media: "(prefers-color-scheme: dark)",
       },
     ],
