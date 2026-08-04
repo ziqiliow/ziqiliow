@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/:path*',
-        destination: 'https://ziqiliow.framer.website/',
+        destination: 'https://ziqiliow.framer.website/:path*',
       },
     ];
   },
