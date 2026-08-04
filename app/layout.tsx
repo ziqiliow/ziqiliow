@@ -27,3 +27,34 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
+
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Zi Qi’s Portfolio',
+  description: 'Portfolio of Zi Qi Liow',
+  icons: {
+    icon: [
+      {
+        url: '/icon-light.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+    ],
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
